@@ -1,17 +1,17 @@
+import java.util.*;
+
 class demo2
 {
 
-    void sum()
-    {
-        int a=20;
-        int b=20;
-        System.out.print(a+b);
-    }
-
-
     public static void main(String args[])
     {
-      demo2 server=new demo2();
-      server.sum();
+        Scanner scan=new Scanner(System.in);
+
+        System.out.print("Enter the item:");
+        int item=scan.nextInt();
+        System.out.print("Enter the quantity:");
+        int quantity=scan.nextInt();
+        int total=item*quantity;
+        System.out.print("total:"+total);
     }
 }
